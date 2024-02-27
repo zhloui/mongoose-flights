@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  
+  <%- include('./partials/header') %>
+  
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>  
+    <nav>
+      <a href="/flights">All Flights</a>
+      <a href="/flights/new">Add Flight</a>
+    </nav>
+  </body>
+
+  <%- include('./partials/footer') %>
+
+</body>
+
+</html>

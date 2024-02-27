@@ -1,0 +1,12 @@
+<!-- views/flights/index.ejs -->
+
+<%- extends('layout') %>
+
+<%- block('body') %>
+<h1>All Flights</h1>
+<ul>
+      <% flights.forEach(flight => { %>
+        <li><%= flight.airline %> - <%= flight.airport %> - <%= flight.flightNo %> - <%= flight.departs %></li>
+      <% }); %>
+</ul>
+<%- endblock() %>
